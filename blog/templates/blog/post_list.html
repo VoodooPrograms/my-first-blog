@@ -16,10 +16,13 @@
     </div>
         
     <div>
-        <p>published: 30.11.2016, 15:11</p>
-        <h2><a href="post_list.html">Second post</a></h2>
-        <p>Vestibulum hendrerit magna elit, a suscipit mi rutrum ut. Suspendisse potenti. In at fermentum nibh. Etiam mollis porttitor odio, at consequat diam accumsan et. Nam malesuada vehicula lectus sollicitudin suscipit. Etiam scelerisque felis tempus finibus dignissim.
-        </p>
+        {% for post in posts %}
+        <div>
+            <p>published: {{ post.published_date }}</p>
+            <h2><a href="post_list.html">{{ post.title }}</a></h2>
+            <p>{{ post.text }}</p>
+        </div>
+        {% endfor %}
     </div>
         
 </body>
