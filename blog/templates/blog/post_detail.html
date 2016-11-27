@@ -11,15 +11,15 @@
 </head>
 <body>
     {% block content %}
-        {% for post in posts %}
             <div id="content">
                 <div class="post">
                     <h2><a href="{% url 'post_detail' pk=post.pk %}" id="link">{{ post.title }}</a></h2>
-                    <p class="date">Opublikowano: {{ post.published_date }}</p>
+                    {% if post.published_date %}
+                        <p class="date">Opublikowano: {{ post.published_date }}</p>
+                    {% endif %}
                     <p>{{ post.text }}</p>
                 </div>
             </div>
-        {% endfor %}
     {% endblock %}
 </body>
 </html>

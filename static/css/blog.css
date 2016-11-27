@@ -1,0 +1,133 @@
+/*
+red color: #F45144
+black color: #232D36
+white color: #F0F1F3
+
+*/
+body, html
+{
+    height: 100%;
+}
+h2 > a,#main #content h2 a:hover, #main #content h2 a:visited, #main #content h2 a:active, #main #content h2 a:link
+{
+    color:#F45144;
+    text-decoration: none;
+}
+header
+{
+    background:#232D36;
+    width:100%;
+    margin-top: 0px;
+    padding: 20px 20px 20px 40px;  
+}
+header h1 a:link
+{
+    color:#F45144;
+    font-size:34px;
+    text-decoration: none;
+}
+header h1 a:hover, header h1 a:visited, header h1 a:active
+{
+    text-decoration: none;
+    color:#F45144;
+}
+#main
+{
+    position: relative;
+    height: 100%;
+}
+
+#main #left-bar
+{
+    position: relative;
+    width:20%;
+    float: left;
+    min-height: 100%;
+    background: #F0F1F3;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    z-index: 1;
+}
+#main #left-bar a:hover, #main #left-bar a:link, #main #left-bar a:visited, #main #left-bar a:active
+{
+    text-decoration: none;
+}
+#main #left-bar .left-bar-head
+{
+    width:100%;
+    line-height: 50px;
+    text-align:center;
+    font-size: 24px;
+    color:#F45144;
+    border-bottom: 2px solid #F45144;
+}
+#main #left-bar .left-bar-nav
+{
+    width:100%;
+    line-height: 40px;
+    text-align:center;
+    font-size: 20px;
+    color:#F45144;
+    -webkit-transition: background 0.5s;
+    transition: background 0.5s;
+}
+
+#main #left-bar .left-bar-nav:hover
+{
+    background: #F45144;
+    color:wheat;
+}
+
+#main #left-bar .left-bar-head p, #main #left-bar .left-bar-nav p;
+{
+    vertical-align: middle;
+}
+#main #left-bar .left-bar-foot
+{
+    width:100%;
+    line-height: 50px;
+    text-align:center;
+    border-top: 2px solid #F45144;
+}
+#main #content
+{
+    width:80%;
+    float:left;
+    padding: 20px;
+    background: #F0F1F3;
+    z-index: 0;
+}
+.post
+{
+    margin-bottom: 40px;
+}
+.date
+{
+    width:50%;
+    float:right;
+    text-align: right;
+}
+footer
+{
+    width:100%;
+    line-height: 50px;
+    float:left;
+    background: #232D36;
+    text-align: center;
+    color:wheat;
+}
+
+
+
+
+.stuck
+{
+    position: fixed;
+}
+
+
+
+
+
+
+
+
