@@ -91,7 +91,7 @@ header h1 a:hover, header h1 a:visited, header h1 a:active
 #main #content
 {
     width:80%;
-    float:left;
+    float:right;
     padding: 20px;
     background: #F0F1F3;
     z-index: 0;
@@ -102,9 +102,18 @@ header h1 a:hover, header h1 a:visited, header h1 a:active
 }
 .date
 {
-    width:50%;
-    float:right;
-    text-align: right;
+    width:100%;
+    float:left;
+    font-style: italic;
+}
+.end-line
+{
+    width:75%;
+    height:1px;
+    background:#dadada;
+    margin: 0 auto;
+    margin-top:40px;
+    
 }
 footer
 {

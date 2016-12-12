@@ -17,6 +17,7 @@
                     <h2><a href="{% url 'post_detail' pk=post.pk %}" id="link">{{ post.title }}</a></h2>
                     <p class="date">Opublikowano: {{ post.published_date }}</p>
                     <p>{{ post.text }}</p>
+		            <div class="end-line"></div>
                 </div>
             </div>
         {% endfor %}

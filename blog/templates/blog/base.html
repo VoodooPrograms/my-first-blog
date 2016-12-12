@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <h1><a href="#">Bloooog</a></h1>
+        <h1><a href="#">Blooog obiektowy</a></h1>
     </header>
     
 
@@ -36,9 +36,9 @@
                 </div>
             </a>
             <div class="left-bar-foot">
-                <a href="#"><img src="/static/images/facebook-logo.png"></a>
-                <a href="#"><img src="/static/images/github-logo.png"></a>
-                <a href="#"><img src="/static/images/python-logo.png"></a>
+                <a href="#"><img src="/static/images/facebook-logo.svg" style="width:64px;"></a>
+                <a href="#"><img src="/static/images/github-logo.svg" style="width:64px;"></a>
+                <a href="#"><img src="/static/images/python-logo.svg" style="width:64px;"></a>
             </div>
         </div>
         {% block content %}
@@ -46,5 +46,23 @@
     </div>
     
     <footer>Made by Bartosz Belski &copy; {% now "Y" %}</footer>
+    
+    <script>
+        window.onscroll = function()
+        {
+            var sticky = document.getElementById("left-bar");
+            if(document.body.scrollTop+document.documentElement.scrollTop > 110)
+            {
+                document.getElementById("left-bar").style.position = "fixed";          
+                document.getElementById("left-bar").style.top = "0px";          
+            }
+            else
+            {
+                document.getElementById("left-bar").style.position = "relative";          
+                document.getElementById("left-bar").style.top = "0px";      
+            }
+
+        }
+    </script>
 </body>
 </html>
